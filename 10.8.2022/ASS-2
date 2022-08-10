@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+
+{
+	int n,r,a,sum=0;
+	printf("enter any number");
+	scanf("%d",&n);
+	a=n;
+	while(n>0)
+	{
+		r=n%10;
+		sum=sum+r;
+		n=n/10;
+	}
+	if(a%sum==0)
+	printf("Harshad Number");
+	else
+	printf("Not harshad Number");
+	return 0;
+}
+
+OUTPUT:
+---------------------
+enter any number156
+Harshad Number
+--------------------------------
+Process exited after 3.155 seconds with return value 0
+Press any key to continue . . .
+
+OUTPUT:
+-------------------
+enter any number22
+Not harshad Number
+--------------------------------
+Process exited after 8.336 seconds with return value 0
+Press any key to continue . . .
