@@ -1,0 +1,37 @@
+Assinement:-2
+----------------------
+#include <stdio.h>
+
+int main() {
+
+  int n, rever = 0, r;
+
+  printf("Enter an integer: ");
+  scanf("%d", &n);
+
+  while (n != 0) {
+    r = n % 10;
+    rever = rever * 10 + r;
+    n /= 10;
+  }
+
+  printf("Rever number = %d", rever);
+
+  return 0;
+}
+
+OUTPUT:1
+-------------------
+Enter an integer: 1234
+Rever number = 4321
+--------------------------------
+Process exited after 7.588 seconds with return value 0
+Press any key to continue . . .
+
+OUTPUT:2
+--------------------
+Enter an integer: 5678
+Rever number = 8765
+--------------------------------
+Process exited after 3.203 seconds with return value 0
+Press any key to continue . . .
