@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+	int n,r,sum=0,p=1,sub,i;
+	printf("enter number: "); 
+	scanf("%d",&n); 
+	i=n; 
+	while(n>0)
+	{
+		r=n%10; 
+		sum=sum+r;
+		n=n/10;
+	}
+	while(i>0)
+	{
+		r=i%10;
+		p=p*r;
+		i=i/10;
+	}
+	sub=p-sum;
+	printf("%d",sub);
+	return 0;
+}
+
+OUTPUT:-1
+--------------------
+enter number: 234
+15
+--------------------------------
+Process exited after 2.638 seconds with return value 0
+Press any key to continue . . .
+
+OUTPUT:-2
+---------------
+enter number: 4421
+21
+--------------------------------
+Process exited after 8.447 seconds with return value 0
+Press any key to continue . . .
+
+
