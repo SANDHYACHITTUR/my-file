@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int a[]={1,2,3,4,5};
+	int len=sizeof(a)/sizeof(int);
+	int i,sum=0,f;    
+
+	for(i=0;i<len;i++)   
+	{
+		f=1;
+		while(a[i]>0)    
+		{
+			f=f*a[i];     
+			a[i]--;      
+		}
+		sum+=f;   
+	}
+	printf("Sum of factorial values of the elements in array = %d",sum);
+	return 0;
+}
+-------
+OUTPUT
+--------
+Sum of factorial values of the elements in array = 153
+--------------------------------
+Process exited after 0.01991 seconds with return value 0
+Press any key to continue . . .
+
+
