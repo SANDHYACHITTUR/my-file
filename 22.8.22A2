@@ -1,0 +1,55 @@
+#include<stdio.h>
+void main()
+{
+	int a[100][100];
+	int i,j,r,c,sum;
+	printf("Enter how many rows \n");
+	scanf("%d",&r);
+	printf("Enter how many cols \n");
+	scanf("%d",&c);
+	printf("Enter elements into array \n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		sum=0;
+		for(j=0;j<c;j++)
+		{
+			sum=sum+a[j][i]	;
+		}
+		printf(" %d Col sum= %d \n",i+1,sum);		
+	}
+	
+}
+
+----------
+OUTPUT:-
+----------
+Enter how many rows
+3
+Enter how many cols
+5
+Enter elements into array
+12 14 16
+1  3  5
+2  4  6
+9  6  3
+11 10 15
+ 1 Col sum= 23
+ 2 Col sum= 19
+ 3 Col sum= 31
+
+--------------------------------
+Process exited after 104.6 seconds with return value 3
+Press any key to continue . . .
+
+
+
+
+
+
