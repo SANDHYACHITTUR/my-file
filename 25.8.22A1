@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include<string.h>
 int main() {
     int i,count=1,len;
     char a[100];
@@ -17,6 +17,5 @@ int main() {
 ----------
 OUTPUT:-
 ----------
-enter your sentence i love india
-i love india
+enter your sentencei love india
 num of words=3
