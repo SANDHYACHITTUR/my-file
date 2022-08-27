@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char s1[20];
+	char s2[20];
+	int n,i,j,count=0;
+	scanf("%s",&s1);
+	scanf("%s",&s2);
+	{
+		for(i=0;s1[i]!='\0';i++)
+		{
+			if(s1[i]==s2[i])
+			count++;
+		}
+		if(count==n)
+		printf("ANAGRAM");
+		else
+		printf("NOT ANAGRAM");
+	 } 
+	 return 0;
+}
+-------
+OUTPUT:
+-------
+b e l o w
+b e l o w
+ANAGRAM
+--------------------------------
+Process exited after 10.02 seconds with return value 0
+Press any key to continue . . .
